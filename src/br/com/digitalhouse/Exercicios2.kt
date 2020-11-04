@@ -2,20 +2,15 @@ package br.com.digitalhouse
 
 fun main() {
 
-    val meuArray = ArrayList<Int>()
-    meuArray.add(1)
-    meuArray.add(2)
-    meuArray.add(3)
-    meuArray.add(6)
-    meuArray.add(7)
-    meuArray.add(8)
-
+    val meuArray = arrayListOf<Int>(1,2,3,4)
+    
     //exercicio1()
     //println(exercicio2(20, 10))
     //println(exercicio3(11))
     //println(exercicio4(meuArray))
     //println(exercicio5(meuArray))
     //println(exercicio6(meuArray))
+    //println(exercicio6(arrayListOf(1,4,6,9)))
 }
 
 fun exercicio1 (){
@@ -40,6 +35,7 @@ fun exercicio3(n1: Int) : Boolean{
 }
 
 //4. Escrever um programa, que pegue um Array de números e retorne a soma de todos os elementos dele.
+//fun somaArray(array : ArrayList<Int>) : Int = array.sum()
 fun exercicio4(umArray: ArrayList<Int>) : Int{
     var soma = 0
     for (num in umArray){
