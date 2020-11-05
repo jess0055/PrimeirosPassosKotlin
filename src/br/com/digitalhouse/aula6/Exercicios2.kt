@@ -1,16 +1,16 @@
-package br.com.digitalhouse
+package br.com.digitalhouse.aula6
 
 fun main() {
 
     val meuArray = arrayListOf<Int>(1,2,3,4)
-    
-    //exercicio1()
-    //println(exercicio2(20, 10))
-    //println(exercicio3(11))
-    //println(exercicio4(meuArray))
-    //println(exercicio5(meuArray))
-    //println(exercicio6(meuArray))
-    //println(exercicio6(arrayListOf(1,4,6,9)))
+
+    exercicio1()
+    println(exercicio2(20, 10))
+    println(exercicio3(11))
+    println(exercicio4(meuArray))
+    println(exercicio5(meuArray))
+    println(exercicio6(meuArray))
+    println(exercicio6(arrayListOf(1,4,6,9)))
 }
 
 fun exercicio1 (){

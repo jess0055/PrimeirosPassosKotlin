@@ -1,12 +1,12 @@
-package br.com.digitalhouse
+package br.com.digitalhouse.aula6
 
 fun main() {
-    //println(mairNumero(5,8,4))
-    //println(comparaTexto("jessica", "jess"))
-    //println(par(4))
-    //imprimeCemImpares()
-    //println(analisaInteiros(2,5,6,8))
-    //imprimeCemPositivos()
+    println(mairNumero(5,8,4))
+    println(comparaTexto("jessica", "jess"))
+    println(par(4))
+    imprimeCemImpares()
+    println(analisaInteiros(2,5,6,8))
+    imprimeCemPositivos()
 }
 
 //1) Escrever o código que deve analisar três números inteiros e retornar o maior deles.

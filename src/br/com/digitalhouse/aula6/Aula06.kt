@@ -1,4 +1,4 @@
-package br.com.digitalhouse
+package br.com.digitalhouse.aula6
 
 fun main(){ //main+enter
     val frase = "teste"
