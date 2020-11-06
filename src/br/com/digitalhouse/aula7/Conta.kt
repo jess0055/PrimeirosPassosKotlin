@@ -2,7 +2,7 @@ package br.com.digitalhouse.aula7
 
 import kotlin.random.Random
 
-class Conta (val titular: Cliente, var saldo: Double, val numConta: Int) {
+class Conta(val titular: Cliente, val numConta: Int, var saldo: Double) {
 
     fun deposito (valorDeposito: Double) {
         saldo+= valorDeposito
