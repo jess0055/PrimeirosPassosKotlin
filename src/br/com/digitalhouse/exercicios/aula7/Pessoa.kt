@@ -1,4 +1,4 @@
-package br.com.digitalhouse.aula7
+package br.com.digitalhouse.exercicios.aula7
 
 class Pessoa (val nome :String, val idade :Int) {
     var altura: Double = 0.0

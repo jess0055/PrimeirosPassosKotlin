@@ -1,4 +1,4 @@
-package br.com.digitalhouse.aula7
+package br.com.digitalhouse.exercicios.aula7
 
 fun main() {
 

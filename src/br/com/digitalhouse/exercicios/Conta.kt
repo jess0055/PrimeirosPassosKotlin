@@ -1,6 +1,4 @@
-package br.com.digitalhouse.aula7
-
-import kotlin.random.Random
+package br.com.digitalhouse.exercicios
 
 class Conta(val titular: Cliente, val numConta: Int, var saldo: Double) {
 

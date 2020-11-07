@@ -1,3 +1,3 @@
-package br.com.digitalhouse.aula7
+package br.com.digitalhouse.exercicios
 
 class Cliente (val nome: String, val sobrenome: String)

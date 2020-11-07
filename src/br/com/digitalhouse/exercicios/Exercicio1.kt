@@ -1,6 +1,9 @@
-package br.com.digitalhouse.aula7
+package br.com.digitalhouse.exercicios
 
-    fun main (){
+import br.com.digitalhouse.exercicios.Cliente
+import br.com.digitalhouse.exercicios.Conta
+
+fun main (){
         val cliente1 = Cliente("Jessica", "Fernandes")
         val cliente2 = Cliente("Vinicius", "Felipe")
         val conta1 = Conta(cliente1, 123456, 0.0)
