@@ -1,3 +1,3 @@
-package br.com.digitalhouse.exercicio5
+package br.com.digitalhouse.concessionaria
 
 class Venda (var valorDaVenda : Double, var veiculoVendido: Veiculo, var cliente: Cliente)

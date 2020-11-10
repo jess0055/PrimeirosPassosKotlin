@@ -1,4 +1,4 @@
-package br.com.digitalhouse.exercicio5
+package br.com.digitalhouse.concessionaria
 
 class Concessionaria {
 
