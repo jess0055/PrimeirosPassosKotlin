@@ -1,4 +1,6 @@
-package br.com.digitalhouse.exercicios
+package br.com.digitalhouse.ex3atleta
+
+import br.com.digitalhouse.ex3atleta.Atleta
 
 class Prova (var dificuldade: Int, var energiaNecessaria: Int){
 

@@ -1,4 +1,4 @@
-package br.com.digitalhouse.exercicios
+package br.com.digitalhouse.ex4tripe
 
 fun main() {
 

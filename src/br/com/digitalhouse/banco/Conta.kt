@@ -1,6 +1,6 @@
 package br.com.digitalhouse.banco
 
-open class Conta (var saldo: Double = 0.0, val cliente: Cliente) {
+open class Conta (protected var saldo: Double = 0.0, val cliente: Cliente) {
 
     fun depositarDinheiro (valor: Double) {
         if (valor > 0){

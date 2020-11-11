@@ -1,4 +1,4 @@
-package br.com.digitalhouse.exercicios
+package br.com.digitalhouse.ex3atleta
 
 fun main() {
     val bolt = Atleta("Bolt", 10, 50)

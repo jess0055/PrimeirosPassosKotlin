@@ -1,4 +1,6 @@
-package br.com.digitalhouse.exercicios
+package br.com.digitalhouse.ex2jogador
+
+import br.com.digitalhouse.ex2jogador.JogadorDeFutebol
 
 class SessaoDeTreinamento (){
 

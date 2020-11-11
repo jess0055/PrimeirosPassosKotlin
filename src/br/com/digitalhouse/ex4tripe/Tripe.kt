@@ -1,4 +1,4 @@
-package br.com.digitalhouse.exercicios
+package br.com.digitalhouse.ex4tripe
 
 class Tripe ( var dobrado: Boolean = true, var alturaMinima: Int, var alturaMaxima: Int, var alturaAtual: Int) {
 

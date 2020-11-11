@@ -1,4 +1,4 @@
-package br.com.digitalhouse.exercicios
+package br.com.digitalhouse.ex1conta
 
 class Conta(val titular: Cliente, val numConta: Int, var saldo: Double) {
 
