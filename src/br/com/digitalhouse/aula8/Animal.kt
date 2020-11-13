@@ -1,11 +1,12 @@
 package br.com.digitalhouse.aula8
 
-open class Animal (val nome: String, open val raca: String) {
-
-    fun andar(){}
+abstract class Animal (val nome: String, open val raca: String) {
+    abstract  val tipo: String
+    abstract fun andar()
 
     open fun respirar(){
-        respPrivate ()
+        println("$tipo respira")
+        //respPrivate ()
     }
 
     private fun respPrivate (){}

@@ -10,8 +10,8 @@ fun main() {
     listaAula.add(aula1)
     listaAula.add(aula2)
 
-    val aluno1 = Aluno(1234, "Junior", "Oli")
-    val aluno2 = Aluno(1234, "Junior", "Oli")
+    val aluno1 = Aluno(1234, "Vini", "Oli")
+    val aluno2 = Aluno(1234, "Jess", "Oli")
     val listaAluno = arrayListOf<Aluno>(aluno1, aluno2)
 
 
@@ -21,7 +21,7 @@ fun main() {
     val turma1 = Turma ("turmaA", curso1)
 
     professor1.darAula(aula1)
-    professor1.fazerChamada(aula1, turma1)
+    professor1.fazerChamada(turma1)
 
     aluno1.assistirAula(aula2)
     aluno1.fazerLicao(aula2)
