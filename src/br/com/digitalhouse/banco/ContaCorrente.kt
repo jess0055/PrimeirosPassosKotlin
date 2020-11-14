@@ -10,7 +10,8 @@ class ContaCorrente (var limiteChequeEspecial: Double, saldo: Double, cliente: C
             println("Saque de ${aux + saldo} realizado. Você utilizou $aux do cheque especial. Limite atual $limiteChequeEspecial")
             saldo = 0.0
         }else{
-            super.sacarDinheiro(valor)
+            //super.sacarDinheiro(valor)
+            saldo -= valor
         }
     }
 

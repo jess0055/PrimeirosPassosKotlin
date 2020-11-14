@@ -15,4 +15,13 @@ class ContaPoupanca (var taxaJuros: Double, saldo: Double, cliente: Cliente ) : 
             println("Não há juros para recolhimento")
         }
     }
+
+    override fun sacarDinheiro (valor: Double) {
+        if (valor > 0 && valor <= saldo){
+            saldo -= valor
+            println("Saque de $valor realizado com sucesso. Saldo atual: $saldo")
+        }else{
+            println("Valor inválido")
+        }
+    }
 }

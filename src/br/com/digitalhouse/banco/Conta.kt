@@ -1,6 +1,6 @@
 package br.com.digitalhouse.banco
 
-open class Conta (protected var saldo: Double = 0.0, val cliente: Cliente) {
+abstract class Conta (protected var saldo: Double = 0.0, val cliente: Cliente) {
 
     fun depositarDinheiro (valor: Double) {
         if (valor > 0){
@@ -11,14 +11,7 @@ open class Conta (protected var saldo: Double = 0.0, val cliente: Cliente) {
         }
     }
 
-    open fun sacarDinheiro (valor: Double) {
-        if (valor > 0 && valor <= saldo){
-            saldo -= valor
-            println("Saque de $valor realizado com sucesso. Saldo atual: $saldo")
-        }else{
-            println("Valor inválido")
-        }
-    }
+    abstract fun sacarDinheiro (valor: Double)
 
     fun consultarSaldo () : Double{
         return saldo
