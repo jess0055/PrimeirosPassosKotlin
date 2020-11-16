@@ -2,10 +2,9 @@ package br.com.digitalhouse.ingresso
 
 abstract class Ingresso (var valor:Double) {
 
-  abstract  val tipo: String
+  abstract var tipo : String
 
-  open fun imprimeValor(){
+  abstract fun imprimeValor()
 
-  }
-
+  abstract fun imprimeTipo()
 }

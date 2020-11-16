@@ -1,13 +1,14 @@
 package br.com.digitalhouse.ingresso
 
 class Normal(valor: Double) : Ingresso (valor){
+    override var tipo = "Ingresso Normal"
 
-    override val tipo = "Ingresso Normal"
-
-
-    fun imprimeTipo(){
-        println(tipo)
+    override fun imprimeTipo(){
+        println (tipo)
     }
 
+    override fun imprimeValor(){
+        println (valor)
+    }
 
 }

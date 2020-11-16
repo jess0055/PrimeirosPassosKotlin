@@ -1,4 +1,18 @@
 package br.com.digitalhouse.ingresso
 
-class CamaroteInferior(valorAdicional: Double, valor: Double) : Vip(valorAdicional, valor) {
+class CamaroteInferior(valorAdicionalVip: Double, valor: Double) : Vip(valorAdicionalVip, valor) {
+
+    override var tipo = "Camarote Inferior"
+
+    override fun valorIngresso(): Double {
+        return  valor + valorAdicionalVip
+    }
+
+    override fun imprimeValor() {
+        println (valorIngresso())
+    }
+
+    override fun imprimeTipo() {
+        println (tipo)
+    }
 }

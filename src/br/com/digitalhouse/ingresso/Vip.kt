@@ -1,14 +1,7 @@
 package br.com.digitalhouse.ingresso
 
-open class Vip(var valorAdicional: Double, valor: Double) : Ingresso(valor) {
-    override val tipo = "Ingresso Normal"
+abstract class Vip(var valorAdicionalVip: Double, valor: Double) : Ingresso(valor) {
 
+    abstract fun valorIngresso() : Double
 
-    fun valorIngresso() : Double {
-        return  valor + valorAdicional
-    }
-
-    fun imprimeLocalizacao(){
-
-    }
 }

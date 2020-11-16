@@ -12,9 +12,16 @@ fun main() {
     //polimorfismo
     executar(dog)
     executar(cat)
+
+    //polimorfismo com interface
+    tomarMedicamento(dog)
 }
 
 fun executar(animal: Animal){
     //polimofismo
     animal.andar()
+}
+
+fun tomarMedicamento(animal: Saudavel){
+    animal.tomarMedicamento()
 }

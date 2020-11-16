@@ -1,6 +1,6 @@
 package br.com.digitalhouse.aula8
 
-class Cachorro (raca: String, nome: String) : Animal (nome, raca) {
+class Cachorro (raca: String, nome: String) : Animal (nome, raca), Saudavel {
 
    //sobrescrita obrigatoria pois são abstratos na classe mae
     override val tipo = "Cachorro"
@@ -22,4 +22,11 @@ class Cachorro (raca: String, nome: String) : Animal (nome, raca) {
     fun latir(){}
 
     fun cavarBuraco(){}
+
+    //interface
+    override val diagnostico = "pulga"
+
+    override fun animalSaudavel(): Boolean {
+       return false
+    }
 }
