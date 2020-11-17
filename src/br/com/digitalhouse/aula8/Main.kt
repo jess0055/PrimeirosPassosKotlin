@@ -2,6 +2,13 @@ package br.com.digitalhouse.aula8
 
 fun main() {
 
+    val cachorro: Saudavel = object : Saudavel{
+        override val diagnostico = "teste"
+        override fun animalSaudavel(): Boolean {
+           return true
+        }
+
+    }
     val dog = Cachorro("srd", "Bidu")
     val cat = Gato("srd", "mel")
 
