@@ -10,7 +10,7 @@ class Impressora  (){
 
     fun imprimir(){
         for (imprimivel in listaimprimivel){
-            println(imprimivel.imprimir())
+           imprimivel.imprimir()
         }
     }
 }
