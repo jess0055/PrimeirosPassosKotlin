@@ -11,4 +11,5 @@ fun main() {
     impressora.adicionaLista(contrato)
     impressora.imprimir()
    // foto.imprimir()
+
 }
