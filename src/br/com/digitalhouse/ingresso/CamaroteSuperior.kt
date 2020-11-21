@@ -1,6 +1,6 @@
 package br.com.digitalhouse.ingresso
 
-class CamaroteSuperior (var valorAdicionalCamarote: Double, valorAdicionalVip: Double, valor: Double) : Vip(valorAdicionalVip, valor){
+class CamaroteSuperior (var valorAdicionalCamarote: Double, override var valorAdicionalVip: Double, valor: Double) : Vip(valor){
 
     override var tipo = "Camarote Superior"
 
