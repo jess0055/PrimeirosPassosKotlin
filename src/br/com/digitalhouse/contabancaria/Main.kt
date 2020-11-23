@@ -2,7 +2,6 @@ package br.com.digitalhouse.contabancaria
 
 fun main() {
 
-
     val menu = Menu()
     menu.exibirMenu()
     var opcao = readLine()!!.toInt()
@@ -23,7 +22,7 @@ fun main() {
         menu.exibirMenu()
         opcao = readLine()!!.toInt()
     }
-    if (opcao ==5){
+    if (opcao == 5){
         menu.finalizar()
     }
 }

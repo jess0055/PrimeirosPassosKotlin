@@ -1,6 +1,7 @@
 package br.com.digitalhouse.contabancaria
 
 data class CC(override val numeroConta: Int, override var saldo: Double): ContaBancaria(){
+    //(0..100000).random()
     var taxaDeOperacao: Double = 0.0
 
     override fun mostrarDados() {
@@ -16,6 +17,7 @@ data class CC(override val numeroConta: Int, override var saldo: Double): ContaB
         }
 
     }
+
     override fun depositar(valor: Double){
         if (saldo>0) {
             saldo -= taxaDeOperacao
