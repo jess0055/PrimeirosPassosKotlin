@@ -1,6 +1,7 @@
 package br.com.digitalhouse.contabancaria
 
-data class CC(var taxaDeOperacao: Double, override val numeroConta: Int, override var saldo: Double): ContaBancaria(){
+data class CC(override val numeroConta: Int, override var saldo: Double): ContaBancaria(){
+    var taxaDeOperacao: Double = 0.0
 
     override fun mostrarDados() {
        println(this.toString())

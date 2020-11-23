@@ -2,24 +2,34 @@ package br.com.digitalhouse.contabancaria
 
 fun main() {
 
-    println("Bem vindo ao banco XX!! No que podemos te ajudar hoje?\nMenu:\n1. Criar conta\n2. Selecionar conta\n" +
-            "3. Remover conta\n4. Gerar relatório\n5. Finalizar")
-    var op = readLine()?.toInt()
 
-    when(op){
-        1-> {
-            println("Informe 1 para conta poupança ou 2 para conta corrente:")
-            criarConta()
+    val menu = Menu()
+    menu.exibirMenu()
+    var opcao = readLine()!!.toInt()
+
+    while (opcao != 5){
+        when(opcao){
+            1 -> {
+                println("Informe 1 para conta poupança ou 2 para conta corrente:")
+                var tipoConta = readLine()!!.toInt()
+                println("Informe o saldo da conta:")
+                var saldo: Double = readLine()!!.toDouble()
+                menu.criarConta(tipoConta, informarConta(), saldo)
+            }
+            2 -> menu.selecionarConta(informarConta())
+            3 -> menu.removerConta(informarConta())
+            4 -> menu.gerarRelatorio()
         }
-        2-> println("Informe o número da conta:")
-        3-> println("Informe o número da conta:")
-        4-> println("Relatórios:")
-        5-> println("Sessão finalizada.")
+        menu.exibirMenu()
+        opcao = readLine()!!.toInt()
     }
-
+    if (opcao ==5){
+        menu.finalizar()
+    }
 }
 
-fun criarConta(){
-    var tipoConta = readLine()?.toInt()
-    println(tipoConta)
+fun informarConta() : Int{
+    println("Informe o número da conta:")
+    var numConta:Int = readLine()!!.toInt()
+    return  numConta
 }
