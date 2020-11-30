@@ -21,16 +21,15 @@ class Estoque() {
 
     fun efetuarVenda(codigo: Int, quantidade: Int){
         for (livro in listaLivros){
-            if (livro.qtdeEstoque <= quantidade){
+            if (verificaQtdDisponivel(livro, quantidade)){
                 livro.qtdeEstoque -= quantidade
             }
             else{
-                println("Estoque esgotado")
+                println("Quantidade não disponível")
             }
         }
     }
 
-    private fun verificaEstoque(quantidade: Int) : Boolean {
-        return true
-    }
+    private fun verificaQtdDisponivel(livro: Livro, quantidade: Int) = livro.qtdeEstoque <= quantidade
+
 }
