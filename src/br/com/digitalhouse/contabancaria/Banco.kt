@@ -10,7 +10,7 @@ class Banco : Imprimivel{
 
     fun procurarConta(numeroConta: Int) : ContaBancaria? {
         for (conta in listaContas){
-            if (conta.numeroConta.equals(numeroConta)){
+            if (conta.numeroConta == numeroConta){
                 return  conta
             }
         }

@@ -27,12 +27,11 @@ fun main() {
     apelidos.forEach{apelido ->
         println(apelido) }
 
-    //Exercicio 3
-    val listaNum = mutableListOf<Int>()
-    //listaNum.add(1,5,5,6,7,8,8,8)
+    val listaNum = mutableListOf<Int>(1,5,5,6,7,8,8,8)
+    println(listaNum)
 
     val setNum = mutableSetOf<Int>(1,5,5,6,7,8,8,8)
-    //setNum.addAll(1,2,3,4,5)
+    println(setNum)
 
 
 }

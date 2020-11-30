@@ -1,8 +1,14 @@
 package br.com.digitalhouse.contabancaria
 
-data class CC(override val numeroConta: Int, override var saldo: Double): ContaBancaria(){
-    //(0..100000).random()
-    var taxaDeOperacao: Double = 0.0
+data class CC(val nomeCliente: String): ContaBancaria(){
+
+    override val numeroConta: Int = (0..100000).random()
+    override var saldo: Double = 0.0
+    var taxaDeOperacao: Double = 1.0
+
+    init {
+        println("${nomeCliente} sua conta foi criada com sucesso. Número $numeroConta Saldo $saldo Taxa $taxaDeOperacao")
+    }
 
     override fun mostrarDados() {
        println(this.toString())
