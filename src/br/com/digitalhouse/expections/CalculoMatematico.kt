@@ -12,8 +12,12 @@ class CalculoMatematico {
         return resultado
     }
 
-//    fun divisaoSenmTryCatch(num1: Int, num2: Int) throws ArithmeticException {
-//
-//        throw new ArithmeticException ("erro")
-//    }
+    fun divisaoSenmTryCatch(num1: Int, num2: Int) : Int  {
+
+       if(num2 == 0){
+           throw  ArithmeticException("Divisão não pode ser por zero")
+       }else{
+           return num1 / num2
+       }
+    }
 }
